@@ -139,6 +139,7 @@ body {
   background-color: #7700d1;
   color: #fff;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .BOLD {
@@ -249,16 +250,10 @@ body {
 
 .header {
   position: relative;
-}
-.header .header__bg {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
-  max-width: 100%;
-  top: 22%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  background-image: url("../img/header__bg.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 .header__nav {
   display: flex;
@@ -290,7 +285,7 @@ body {
 }
 .header__circle {
   position: absolute;
-  bottom: 0;
+  top: 20%;
   left: 15%;
   transform: rotate(-21.24deg);
 }
@@ -312,6 +307,7 @@ body {
 }
 .header__content {
   margin-top: 120px;
+  padding-bottom: 313px;
   display: grid;
   justify-content: center;
   text-align: center;
@@ -333,7 +329,12 @@ body {
 }
 
 .org {
-  margin-top: 414px;
+  margin-top: 100px;
+  position: relative;
+  background-image: url("../img/org__bg.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 .org .subtitle {
   margin-top: 25px;
@@ -344,12 +345,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   position: relative;
-}
-.org__list-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(-18.5%, 0);
 }
 .org__item {
   background-color: #fff;
@@ -392,12 +387,18 @@ body {
 
 .job {
   text-align: center;
+  position: relative;
 }
 .job__container {
   position: relative;
+  background-image: url("../img/job__bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 100%;
 }
 .job__bg {
   position: absolute;
+  z-index: -10;
   bottom: 0;
   left: 0;
   transform: translate(-10%, 0);
@@ -431,11 +432,17 @@ body {
 
 .client {
   padding-top: 110px;
+  position: relative;
+  background-image: url("../img/client__bg.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center 107%;
 }
 .client__container {
   position: relative;
 }
 .client__bg {
+  z-index: -10;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -520,6 +527,8 @@ body {
   height: 370px;
   left: 50%;
   transform: translate(-50%, 30%);
+  background-image: url("../img/people.jpg");
+  background-size: cover;
 }
 .exp__item-2 {
   left: 100%;
@@ -536,18 +545,33 @@ body {
   transform: translate(-100%, 90%);
   width: 538px;
   height: 538px;
+  color: #7700d1;
+}
+.exp__item-4 .exp__item-cont {
+  width: 428px;
+}
+.exp__item-4 .exp__item-img {
+  margin: 26px auto 20px;
+  display: block;
+}
+.exp__item-4 .exp__item-link {
+  color: #7700d1;
+  line-height: 24px;
+  border-bottom: dashed 1px;
 }
 
 .info {
   text-align: center;
+  overflow: hidden;
 }
 .info__container {
   position: relative;
 }
 .info__bg {
   position: absolute;
+  z-index: -10;
   top: 45%;
-  right: -20%;
+  right: -10em;
 }
 .info__subtitle {
   margin-top: 40px;

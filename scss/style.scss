@@ -137,6 +137,7 @@ body {
 	background-color: #7700d1;
 	color: #fff;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .BOLD {
@@ -256,20 +257,21 @@ body {
 
 .header {
 	position: relative;
-	// background-image: url('../img/header__bg.png');
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// height: 100vh;
+	background-image: url("../img/header__bg.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 
-	.header__bg {
-		position: absolute;
-		object-fit: cover;
-		overflow: hidden;
-		max-width: 100%;
-		top: 22%;
-		left: 50%;
-		transform: translate(-50%, 0);
-	}
+	// &__bg {
+	// 	position: absolute;
+	// 	object-fit: cover;
+	// 	width: 100%;
+	// 	height: auto;
+	// 	overflow: hidden;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -20%);
+	// }
 
 	&__nav {
 		display: flex;
@@ -282,6 +284,10 @@ body {
 			display: flex;
 			gap: 50px;
 		}
+	}
+
+	&__content-check {
+		// margin-bottom: 313px;
 	}
 
 	&__logo {
@@ -306,7 +312,7 @@ body {
 
 	&__circle {
 		position: absolute;
-		bottom: 0;
+		top: 20%;
 		left: 15%;
 		transform: rotate(-21.24deg);
 
@@ -333,6 +339,7 @@ body {
 
 	&__content {
 		margin-top: 120px;
+		padding-bottom: 313px;
 		display: grid;
 		justify-content: center;
 		text-align: center;
@@ -360,7 +367,13 @@ body {
 // PRICE
 
 .org {
-	margin-top: 414px;
+	margin-top: 100px;
+
+	position: relative;
+	background-image: url("../img/org__bg.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 
 	.subtitle {
 		margin-top: 25px;
@@ -372,12 +385,14 @@ body {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 30px;
 		position: relative;
-		&-bg {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			transform: translate(-18.5%, 0);
-		}
+
+		// &-bg {
+		// 	position: absolute;
+		// 	z-index: -10;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	transform: translate(-18.5%, 0);
+		// }
 	}
 
 	&__item {
@@ -429,13 +444,19 @@ body {
 
 .job {
 	text-align: center;
+	position: relative;
 
 	&__container {
 		position: relative;
+		background-image: url("../img/job__bg.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center 100%;
 	}
 
 	&__bg {
 		position: absolute;
+		z-index: -10;
 		bottom: 0;
 		left: 0;
 		transform: translate(-10%, 0);
@@ -477,12 +498,19 @@ body {
 
 .client {
 	padding-top: 110px;
+	position: relative;
+	background-image: url("../img/client__bg.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center 107%;
+
 
 	&__container {
 		position: relative;
 	}
 
 	&__bg {
+		z-index: -10;
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -581,6 +609,8 @@ body {
 			height: 370px;
 			left: 50%;
 			transform: translate(-50%, 30%);
+			background-image: url("../img/people.jpg");
+			background-size: cover;
 		}
 
 		&-2 {
@@ -600,21 +630,40 @@ body {
 			transform: translate(-100%, 90%);
 			width: 538px;
 			height: 538px;
+			color: #7700d1;
+
+			.exp__item-cont {
+				width: 428px;
+			}
+
+			.exp__item-img {
+				margin: 26px auto 20px;
+				display: block;
+			}
+
+			.exp__item-link {
+				color: #7700d1;
+				line-height: 24px;
+				border-bottom: dashed 1px;
+			}
 		}
 	}
 }
 
 .info {
 	text-align: center;
+	overflow: hidden;
 
 	&__container {
 		position: relative;
+		
 	}
 
 	&__bg {
 		position: absolute;
+		z-index: -10;
 		top: 45%;
-		right: -20%;
+		right: -10em;
 	}
 
 	&__subtitle {
@@ -646,19 +695,19 @@ body {
 	&__political {
 		font-size: 15px;
 		line-height: 24px;
-		a{
+		a {
 			display: block;
 			color: #7700d1;
 			border-bottom: dashed 1px;
 		}
 
-		a:last-child{
+		a:last-child {
 			margin-top: 9px;
 		}
 	}
 
-	&__nav-right{
-		li a{
+	&__nav-right {
+		li a {
 			color: #7700d1;
 		}
 	}
