@@ -1,2 +1,2 @@
 # Delivery
-<a href="sb-baby.github.io/delivery/">CLICK MY LINK</a>
+<a href="https://sb-baby.github.io/Delivery/">CLICK MY LINK</a>
